@@ -13,14 +13,14 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 from reviews.models import Category, Genre, Review, Title, User
 
+from .filters import TitlesFilter
 from .mixins import ListCreateDestroyViewSet
 from .permissions import IsAdminOrMe, IsAdminOrReadOnly, IsAuthorOrReadOnly
-from .serializers import (
-    AuthSerializer, CategorySerializer, CommentSerializer,
-    GenreSerializer, GetTokenSerializer, ReadOnlyTitleSerializer,
-    ReviewSerializer, TitleSerializer, UserMyselfSerializer, UserSerializer,
-)
-from .filters import TitlesFilter
+from .serializers import (AuthSerializer, CategorySerializer,
+                          CommentSerializer, GenreSerializer,
+                          GetTokenSerializer, ReadOnlyTitleSerializer,
+                          ReviewSerializer, TitleSerializer,
+                          UserMyselfSerializer, UserSerializer)
 
 
 class CategoryViewSet(ListCreateDestroyViewSet):

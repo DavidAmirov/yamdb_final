@@ -1,7 +1,7 @@
 from csv import DictReader
-from django.core.management import BaseCommand
 
-from reviews.models import Review, Title, GenreTitle, Comment
+from django.core.management import BaseCommand
+from reviews.models import Comment, GenreTitle, Review, Title
 
 MODELS = (
     Review,
