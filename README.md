@@ -25,7 +25,6 @@
 - **```/reviews/{review_id}/ (GET, PUT, PATCH, DELETE)```** — получаем, редактируем или удаляем комментарий по *id*.
 ### Авторы
 - Давид Амиров
-
 ### Бейдж работы workflow
 https://github.com/DavidAmirov/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
 ### IP
